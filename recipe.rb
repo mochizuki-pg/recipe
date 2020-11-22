@@ -1,6 +1,4 @@
 class Recipe
-  attr_reader :name
-
   def initialize(title:, ingredients:, instructions:)
     @title = title
     @ingredients = ingredients
