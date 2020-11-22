@@ -1,9 +1,5 @@
 class Ingredient
-  def initialize(name:, quantity:, unit:)
-    @name = name
-    @quantity = quantity
-    @unit = unit
-  end
+  attr_reader :name, :quantity, :unit
 
   def initialize(name:, quantity:, unit:)
     @name = name
@@ -11,11 +7,15 @@ class Ingredient
     @unit = unit
   end
 
-  def name
-    @name
-  end
-
-  def quantity
-    quantity
+  class << self
+    def summary(ingredients)
+      ingredients_text = "材料\n"
+      ingredients.each do |ingredient|
+        ingredients_text << <<-INGREDIENTS_TEXT
+          #{ingredient.name}  #{ingredient.quantity}#{ingredient.unit}
+        INGREDIENTS_TEXT
+      end
+      ingredients_text
+    end
   end
 end

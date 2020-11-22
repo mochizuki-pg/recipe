@@ -1,5 +1,7 @@
 require_relative 'recipe'
 require_relative 'ingredient'
+require_relative 'instruction'
+
 
 title = 'いちごで作る サンタクロース'
 
@@ -10,15 +12,15 @@ ingredients = [
 ]
 
 instructions = [
-  'チョコレートペンは湯煎にかけて溶かしておきます。 ホイップクリームは絞り袋に入れておきます。',
-  'いちごはヘタを切り落とします。',
-  'ヘタの部分から2/3のところを切ります。',
-  'ヘタの部分を下にして切り口にホイップクリームを絞り、挟みます。上にホイップクリームを直径5mm程絞り、帽子をつくります。',
-  'チョコレートペンで顔とボタンを描いて完成です。'
+  Instruction.new(text: 'チョコレートペンは湯煎にかけて溶かしておきます。 ホイップクリームは絞り袋に入れておきます。'),
+  Instruction.new(text: 'いちごはヘタを切り落とします。'),
+  Instruction.new(text: 'ヘタの部分から2/3のところを切ります。'),
+  Instruction.new(text: 'ヘタの部分を下にして切り口にホイップクリームを絞り、挟みます。上にホイップクリームを直径5mm程絞り、帽子をつくります。'),
+  Instruction.new(text: 'チョコレートペンで顔とボタンを描いて完成です。')
 ]
 
 recipe = Recipe.new(title: title, ingredients: ingredients, instructions: instructions)
 
-
+puts recipe.title
 puts recipe.ingredients
 puts recipe.instructions
