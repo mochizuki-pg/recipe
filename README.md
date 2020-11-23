@@ -1,4 +1,4 @@
-# ruby_type
+# ruby_types
 
 Sample code to ruby types using rbs, typeprof, steep.
 
