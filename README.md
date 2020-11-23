@@ -1,6 +1,8 @@
 # ruby_type
 
-## Usage
+Sample code to ruby types using rbs, typeprof, steep.
+
+### Usage
 
 ```bash
 $ bundle
