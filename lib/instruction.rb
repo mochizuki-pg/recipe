@@ -1,5 +1,4 @@
 class Instruction
-  # @dynamic text
   attr_reader :text
 
   def initialize(text:)

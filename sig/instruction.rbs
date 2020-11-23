@@ -3,5 +3,5 @@ class Instruction
   @text: String
 
   def initialize: (text: String) -> void
-  def self.summary: (Array[String]) -> String
+  def self.summary: (Array[untyped]) -> String
 end

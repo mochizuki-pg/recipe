@@ -1,5 +1,4 @@
 class Ingredient
-  # @dynamic name, quantity, unit
   attr_reader :name, :quantity, :unit
 
   def initialize(name:, quantity:, unit:)
