@@ -1,6 +1,6 @@
-require_relative 'recipe'
-require_relative 'ingredient'
-require_relative 'instruction'
+require_relative 'lib/recipe'
+require_relative 'lib/ingredient'
+require_relative 'lib/instruction'
 
 
 title = 'いちごで作る サンタクロース'

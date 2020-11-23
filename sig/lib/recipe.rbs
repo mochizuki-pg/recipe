@@ -1,9 +1,0 @@
-# Classes
-class Recipe
-  @ingredients : String
-  @instructions : String
-  attr_reader title : String
-  def initialize : (title: String, ingredients: String, instructions: String) -> void
-  def ingredients : -> String
-  def instructions : -> String
-end

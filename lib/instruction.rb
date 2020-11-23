@@ -1,4 +1,5 @@
 class Instruction
+  # @dynamic text
   attr_reader :text
 
   def initialize(text:)
@@ -9,9 +10,9 @@ class Instruction
     def summary(instructions)
       instructions_text = "手順\n"
       instructions.each do |instruction|
-        instructions_text << <<-INSTRUCTIONS_TEXT
-          #{instruction.text}
-        INSTRUCTIONS_TEXT
+      instructions_text << <<-INSTRUCTIONS_TEXT
+      #{instruction.text}
+      INSTRUCTIONS_TEXT
       end
       instructions_text
     end

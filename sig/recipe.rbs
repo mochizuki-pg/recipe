@@ -1,0 +1,8 @@
+# Classes
+class Recipe
+  @title: String
+
+  def initialize: (title: String, ingredients: Array[String], instructions: Array[String]) -> void
+  def ingredients: -> String
+  def instructions: -> String
+end
