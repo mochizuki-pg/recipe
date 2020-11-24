@@ -15,5 +15,5 @@ $ bundle exec ruby app.rb
 ### Type Check
 
 ```bash
-$ steep check
+$ bundle exec steep check
 ```
