@@ -8,6 +8,10 @@ Sample code to ruby types using rbs, typeprof, steep.
 $ bundle
 ```
 
+```bash
+$ bundle exec ruby app.rb
+```
+
 ### Type Check
 
 ```bash
