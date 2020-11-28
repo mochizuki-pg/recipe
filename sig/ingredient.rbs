@@ -1,9 +1,9 @@
 # Classes
 class Ingredient
-  @name: String
-  @quantity: String
-  @unit: String
+  attr_reader name : String
+  attr_reader quantity : Integer
+  attr_reader unit : String
 
-  def initialize: (name: String, quantity: String, unit: String) -> void
-  def self.summary: (Array[untyped]) -> String
+  def initialize: (name: String, quantity: Integer, unit: String) -> void
+  def self.summary: (Array[Ingredient]) -> String
 end

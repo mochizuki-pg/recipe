@@ -1,8 +1,9 @@
 # Classes
 class Recipe
-  @title: String
-
-  def initialize: (title: String, ingredients: Array[String], instructions: Array[String]) -> void
+  @ingredients : Array[Ingredient]
+  @instructions : Array[Instruction]
+  attr_reader title : String
+  def initialize: (title: String, ingredients: Array[Ingredient], instructions: Array[Instruction]) -> void
   def ingredients: -> String
   def instructions: -> String
 end

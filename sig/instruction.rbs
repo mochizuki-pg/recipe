@@ -1,7 +1,6 @@
 # Classes
 class Instruction
-  @text: String
-
+  attr_reader text : String
   def initialize: (text: String) -> void
-  def self.summary: (Array[untyped]) -> String
+  def self.summary: (Array[Instruction]) -> String
 end

@@ -37,7 +37,7 @@ GEM
       rbs (~> 0.17.0)
     thor (1.0.1)
     thread_safe (0.3.6)
-    typeprof (0.6.1)
+    typeprof (0.7.0)
       rbs (>= 0.17.0)
     tzinfo (1.2.8)
       thread_safe (~> 0.1)

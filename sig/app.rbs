@@ -1,0 +1,21 @@
+# Classes
+class Recipe
+  attr_reader title : String
+  def initialize : (title: String, ingredients: Array[Ingredient], instructions: Array[Instruction]) -> void
+  def ingredients : -> String
+  def instructions : -> String
+end
+
+class Ingredient
+  attr_reader name : String
+  attr_reader quantity : Integer
+  attr_reader unit : String
+  def initialize : (name: String, quantity: Integer, unit: String) -> void
+  def self.summary : (Array[Ingredient]) -> String
+end
+
+class Instruction
+  attr_reader text : String
+  def initialize : (text: String) -> String
+  def self.summary : (Array[Instruction]) -> String
+end
